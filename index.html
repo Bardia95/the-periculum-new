@@ -77,14 +77,18 @@
         color: #D29F3F;
       }
 
+      #container2 {
+        display: none;
+      }
+
     </style>
   </head>
   <body>
 
-  <div class="container" id="container">
+  <div class="container" id="container1">
     <a href="#" class="content" id="bardia">Bardia.</a>
   </div>
-  <div class="container">
+  <div class="container" id="container2">
     <p class="content">
       <a href="https://www.granttree.co.uk">Writer.</a>
     </p>
@@ -105,9 +109,11 @@
 
   <script>
     var bardia = document.getElementById("bardia");
-    var container = document.getElementById("container");
+    var container1 = document.getElementById("container1");
+    var container2 = document.getElementById("container2");
     bardia.addEventListener("click",function(e){
-        container.style.display = "none";
+        container1.style.display = "none";
+        container2.style.display = "block";
         bardia.style.cursor = "pointer"
     }, false);
   </script>
