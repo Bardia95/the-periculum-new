@@ -68,7 +68,7 @@
   </head>
   <body>
 
-  <div class="container">
+  <div class="container" id="bardia">
     <h1 class="content">Bardia.</h1>
   </div>
   <div class="container">
@@ -88,5 +88,13 @@
       <a href="https://thepericulum.com">Podcast.</a>
     </p>
   </div>
+
+
+  <script>
+    var bardia = document.getElementById("bardia");
+    bardia.addEventListener("click",function(e){
+        bardia.style.display = "none";
+    }, false);
+  </script>
   </body>
 </html>
