@@ -68,8 +68,8 @@
   </head>
   <body>
 
-  <div class="container" id="bardia">
-    <h1 class="content">Bardia.</h1>
+  <div class="container" id="container">
+    <h1 class="content" id="bardia">Bardia.</h1>
   </div>
   <div class="container">
     <p class="content">
@@ -92,8 +92,9 @@
 
   <script>
     var bardia = document.getElementById("bardia");
+    var container = document.getElementById("container");
     bardia.addEventListener("click",function(e){
-        bardia.style.display = "none";
+        container.style.display = "none";
     }, false);
   </script>
   </body>
